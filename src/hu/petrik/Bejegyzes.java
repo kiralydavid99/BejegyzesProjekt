@@ -1,6 +1,6 @@
 package hu.petrik;
-
 import java.time.LocalDateTime;
+
 
 public class Bejegyzes {
     private String  szerzo;
@@ -57,6 +57,8 @@ public class Bejegyzes {
                     this.tartalom;
         }
     }
+
+
 
 
 
