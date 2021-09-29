@@ -8,10 +8,13 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Main {
     public static FileReader fr;
     public static BufferedReader bf;
+    public static Random rnd = new Random();
+
 
     public static void main(String[] args) {
         LocalDateTime now = LocalDateTime.now();
@@ -49,6 +52,11 @@ public class Main {
             fr.close();
         }catch (IOException ex){
             System.out.println(ex.getMessage());
+        }
+        int bejegyzesLike = bejegyzesLista.size() * 20;
+        for (int i = 0; i < bejegyzesLike; i++) {
+            bejegyzesLista.get(rnd.nextInt(bejegyzesLista.size())).like();
+
         }
 
 
