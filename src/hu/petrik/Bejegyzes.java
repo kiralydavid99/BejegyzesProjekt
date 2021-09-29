@@ -9,6 +9,7 @@ public class Bejegyzes {
     private LocalDateTime letrejott;
     private LocalDateTime szerkesztve;
 
+
     public Bejegyzes(String szerzo, String tartalom){
         this.szerzo = szerzo;
         this.tartalom = tartalom;
@@ -56,6 +57,7 @@ public class Bejegyzes {
                     "Szerkesztve: " + this.szerkesztve + "\n" +
                     this.tartalom;
         }
+
     }
 
 
